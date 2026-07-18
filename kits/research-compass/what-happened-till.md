@@ -79,19 +79,43 @@ Studio export stubs for each node: `model-configs/research-compass_*.ts`
 - **Tests**: 25 fixture files, ready
 - **Documentation**: 3 guides + this file
 - **Infrastructure**: lamatic.config.ts, constitutions, flows/, apps/ scaffold ✅
-- **Flow (Nodes 1–2)**: Prepared, awaiting Lamatic runtime validation ⏸️
+- **Flow (All 5 nodes)**: Implemented ✍️, awaiting Lamatic runtime validation ⏸️
+- **README + agent.md**: Drafted ✅
+
+## Pipeline (All 5 Nodes)
+
+```
+Trigger (GraphQLInput)
+  ├─ papers: PaperInput[]
+  └─ researchArea?: string
+       ↓
+Node 1 — Paper Intelligence (LLMNode_010)
+  Output: PaperIntelligenceOutput { domain, papers: PaperData[] }
+       ↓
+Node 2 — Comparison & Insights (LLMNode_020)
+  Output: ComparisonResult { summary, dimensions, agreements, contradictions, keyInsights }
+       ↓
+Node 3 — Gap Detector (LLMNode_030)
+  Output: GapAnalysis { gaps: Gap[] } — 8 typed gap categories
+       ↓
+Node 4 — Research Idea Generator (LLMNode_040)
+  Output: ResearchIdeaGeneratorOutput { ideas: ResearchIdea[] }
+       ↓
+Node 5 — Literature Review Generator (LLMNode_050)
+  Output: LiteratureReview { title, sections, markdown }
+       ↓
+Response (ResearchCompassResponse)
+  Result: { metadata, paperIntelligence, comparison, gaps, futureWork, literatureReview }
+```
 
 ## Remaining Work
 
 | Phase | Task | Status |
 |-------|------|--------|
-| 5.1–5.2 | Flow implementation (prepared) | ⏸️ Pending Lamatic runtime validation |
-| 5.3 | Gap Detector | 🔲 |
-| 5.4 | Research Idea Generator | 🔲 |
-| 5.5 | Literature Review | 🔲 |
-| 6 | Build Next.js App | 🔲 |
+| 5 | All 5 nodes implemented in flow | ✍️ Done (pending runtime validation) |
+| 6 | Build Next.js App (full UI) | 🔲 |
 | 7 | Validation (schema, integration, edge cases) | 🔲 |
-| 8 | Documentation & Submission | 🔲 |
+| 8 | Demo video & PR submission | 🔲 |
 
 ---
 
@@ -106,17 +130,21 @@ Once answered, the same convention applies to all 5 nodes:
 - `{{LLMNode_010.output.generatedResponse}}` — if explicit references are required
 - Or another Lamatic-specific convention
 
-Verify by importing `flows/research-compass.ts` (currently has Nodes 1–2 wired) and checking what data reaches the Comparison node.
+Verify by importing `flows/research-compass.ts` (all 5 nodes wired) and checking:
+1. What does `{{papers}}` resolve to in the Paper Intelligence prompt?
+2. Does the Comparison node receive PaperData[] (structured) or PaperInput[] (raw)?
+3. Can the response node reference any node's output via `{{nodeId.output.fieldName}}`?
 
 ---
 
 ## Total Effort
 
-- **Files created**: 55
+- **Files created**: 58
 - **Lines of types.ts**: ~200
-- **Flow file**: 1 (research-compass.ts, Nodes 1–2)
+- **Flow file**: 1 (research-compass.ts, all 5 nodes)
 - **Prompt files**: 10 (across 5 nodes)
 - **Model configs**: 5 (stubs, following Lamatic convention)
 - **Test fixtures**: 25
 - **Document pages**: 3 guides + this log
 - **Next.js scaffold**: package.json, tsconfig, layout, page, lamatic-client, orchestrate
+- **Other**: README.md, agent.md, lamatic.config.ts, constitutions/default.md

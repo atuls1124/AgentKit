@@ -18,13 +18,17 @@ export async function researchCompass(input: {
   const workflowId = process.env.RESEARCH_COMPASS;
 
   if (!workflowId) {
-    throw new Error("RESEARCH_COMPASS environment variable is not set");
+    return { success: false, error: "RESEARCH_COMPASS environment variable is not set" };
   }
 
   try {
     const client = getLamaticClient();
     const res = await client.executeFlow(workflowId, input);
-    return { success: true, data: res?.result };
+    const raw = res?.result;
+    return {
+      success: true,
+      data: raw ? JSON.parse(typeof raw === "string" ? raw : JSON.stringify(raw)) : null
+    };
   } catch (error) {
     console.error("[research-compass] Flow execution error:", error);
     return {
