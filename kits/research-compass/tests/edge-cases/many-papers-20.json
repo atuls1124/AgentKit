@@ -1,0 +1,165 @@
+{
+  "papers": [
+    {
+      "id": "paper-0",
+      "sourceType": "arxiv",
+      "title": "DeepLabV3+ for Semantic Segmentation",
+      "authors": ["Chen, L.C."],
+      "year": 2018,
+      "abstract": "DeepLabV3+ extends DeepLabV3 by adding a simple yet effective decoder module to refine segmentation results."
+    },
+    {
+      "id": "paper-1",
+      "sourceType": "arxiv",
+      "title": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+      "authors": ["Ronneberger, O."],
+      "year": 2015,
+      "abstract": "U-Net is a convolutional network architecture for fast and precise segmentation of biomedical images."
+    },
+    {
+      "id": "paper-2",
+      "sourceType": "arxiv",
+      "title": "Attention U-Net: Learning Where to Look for the Pancreas",
+      "authors": ["Oktay, O."],
+      "year": 2018,
+      "abstract": "Attention U-Net introduces attention gates that focus on target structures of varying shapes and sizes."
+    },
+    {
+      "id": "paper-3",
+      "sourceType": "arxiv",
+      "title": "nnU-Net: Self-adapting Framework for U-Net-Based Medical Image Segmentation",
+      "authors": ["Isensee, F."],
+      "year": 2021,
+      "abstract": "nnU-Net automatically configures itself for any new medical segmentation task."
+    },
+    {
+      "id": "paper-4",
+      "sourceType": "arxiv",
+      "title": "TransUNet: Transformers Make Strong Encoders for Medical Image Segmentation",
+      "authors": ["Chen, J."],
+      "year": 2021,
+      "abstract": "TransUNet hybridizes transformers and U-Net for medical image segmentation."
+    },
+    {
+      "id": "paper-5",
+      "sourceType": "arxiv",
+      "title": "Swin-Unet: Unet-like Pure Transformer for Medical Image Segmentation",
+      "authors": ["Cao, H."],
+      "year": 2022,
+      "abstract": "Swin-Unet is a pure transformer-based U-Net architecture for medical image segmentation."
+    },
+    {
+      "id": "paper-6",
+      "sourceType": "arxiv",
+      "title": "UNETR: Transformers for 3D Medical Image Segmentation",
+      "authors": ["Hatamizadeh, A."],
+      "year": 2022,
+      "abstract": "UNETR utilizes a transformer as the encoder for 3D medical image segmentation."
+    },
+    {
+      "id": "paper-7",
+      "sourceType": "arxiv",
+      "title": "MedSAM: Segment Anything in Medical Images",
+      "authors": ["Ma, J."],
+      "year": 2024,
+      "abstract": "MedSAM adapts the Segment Anything Model to medical images."
+    },
+    {
+      "id": "paper-8",
+      "sourceType": "arxiv",
+      "title": "SAMed: Segment Anything Model for Medical Image Segmentation",
+      "authors": ["Zhang, Y."],
+      "year": 2023,
+      "abstract": "SAMed fine-tunes SAM for medical image segmentation with adapter modules."
+    },
+    {
+      "id": "paper-9",
+      "sourceType": "arxiv",
+      "title": "EfficientMedSAM: Accelerated Medical SAM with Knowledge Distillation",
+      "authors": ["Xiong, X."],
+      "year": 2024,
+      "abstract": "EfficientMedSAM accelerates MedSAM through knowledge distillation for practical clinical use."
+    },
+    {
+      "id": "paper-10",
+      "sourceType": "arxiv",
+      "title": "DINO: DETR with Improved DeNoising Anchor Boxes for End-to-End Object Detection",
+      "authors": ["Zhang, H."],
+      "year": 2022,
+      "abstract": "DINO improves DETR with denoising training and query initialization."
+    },
+    {
+      "id": "paper-11",
+      "sourceType": "arxiv",
+      "title": "Segment Anything Model (SAM) Overview",
+      "authors": ["Kirillov, A."],
+      "year": 2023,
+      "abstract": "SAM is a promptable segmentation system with zero-shot generalization."
+    },
+    {
+      "id": "paper-12",
+      "sourceType": "arxiv",
+      "title": "YOLOv8 for Real-Time Object Detection",
+      "authors": ["Jocher, G."],
+      "year": 2023,
+      "abstract": "YOLOv8 is a state-of-the-art real-time object detection model."
+    },
+    {
+      "id": "paper-13",
+      "sourceType": "arxiv",
+      "title": "ConvNeXt: A ConvNet for the 2020s",
+      "authors": ["Liu, Z."],
+      "year": 2022,
+      "abstract": "ConvNeXt modernizes standard ConvNets for the transformer era."
+    },
+    {
+      "id": "paper-14",
+      "sourceType": "arxiv",
+      "title": "EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks",
+      "authors": ["Tan, M."],
+      "year": 2019,
+      "abstract": "EfficientNet systematically scales network dimensions for improved efficiency."
+    },
+    {
+      "id": "paper-15",
+      "sourceType": "arxiv",
+      "title": "ResNet: Deep Residual Learning for Image Recognition",
+      "authors": ["He, K."],
+      "year": 2016,
+      "abstract": "ResNet introduces residual learning for training very deep networks."
+    },
+    {
+      "id": "paper-16",
+      "sourceType": "arxiv",
+      "title": "Mask R-CNN for Instance Segmentation",
+      "authors": ["He, K."],
+      "year": 2017,
+      "abstract": "Mask R-CNN extends Faster R-CNN for pixel-level instance segmentation."
+    },
+    {
+      "id": "paper-17",
+      "sourceType": "arxiv",
+      "title": "FCN: Fully Convolutional Networks for Semantic Segmentation",
+      "authors": ["Long, J."],
+      "year": 2015,
+      "abstract": "FCN adapts classification networks for dense pixel prediction."
+    },
+    {
+      "id": "paper-18",
+      "sourceType": "arxiv",
+      "title": "SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers",
+      "authors": ["Xie, E."],
+      "year": 2021,
+      "abstract": "SegFormer unifies transformers with a lightweight MLP decoder for segmentation."
+    },
+    {
+      "id": "paper-19",
+      "sourceType": "arxiv",
+      "title": "BEiT: BERT Pre-Training of Image Transformers",
+      "authors": ["Bao, H."],
+      "year": 2021,
+      "abstract": "BEiT pre-trains vision transformers using masked image modeling."
+    }
+  ],
+  "researchArea": "Medical Image Segmentation"
+}

@@ -1,0 +1,14 @@
+{
+  "papers": [
+    {
+      "id": "paper-0",
+      "sourceType": "arxiv",
+      "title": "",
+      "authors": ["Zhang, Y."],
+      "year": 2025,
+      "abstract": "This paper proposes a method for medical image segmentation using deep learning.",
+      "sourceUrl": "https://arxiv.org/abs/2501.12345"
+    }
+  ],
+  "researchArea": "Medical Image Segmentation"
+}

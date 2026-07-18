@@ -1,0 +1,99 @@
+{
+  "domain": {
+    "domain": "Medical Image Analysis",
+    "subDomain": "Polyp Segmentation",
+    "focusAreas": ["Deep Learning", "Transformer Architectures", "Efficient CNNs", "Domain Adaptation"]
+  },
+  "papers": [
+    {
+      "paperId": "paper-0",
+      "title": "Attention-Guided Transformer Network for Polyp Segmentation in Colonoscopy Images",
+      "authors": ["Zhang, Y.", "Chen, L.", "Wang, H."],
+      "venue": { "name": "arXiv", "year": 2025, "type": "preprint" },
+      "doi": "10.1007/978-3-031-12345-6_1",
+      "sourceUrl": "https://arxiv.org/abs/2501.12345",
+      "keywords": ["Polyp Segmentation", "Transformer", "Attention", "Colonoscopy"],
+      "problem": "Polyp segmentation is challenged by varying polyp shapes, sizes, and unclear boundaries in colonoscopy images.",
+      "methodology": "Transformer encoder with multi-scale attention decoder for local and global context fusion.",
+      "dataset": [
+        { "name": "Kvasir-SEG", "usage": "evaluation" },
+        { "name": "CVC-ClinicDB", "usage": "evaluation" }
+      ],
+      "evaluation": [
+        { "name": "Dice Score", "value": 0.923, "unit": "" },
+        { "name": "Dice Score", "value": 0.891, "unit": "" }
+      ],
+      "contributions": [
+        "Novel multi-scale attention decoder that captures boundary details",
+        "State-of-the-art performance on Kvasir-SEG and CVC-ClinicDB",
+        "Open-source code and pretrained models released"
+      ],
+      "limitations": [
+        "High computational cost compared to lightweight CNNs",
+        "No real-time deployment evaluation",
+        "Only evaluated on public datasets, not clinical data"
+      ],
+      "summary": "This paper proposes a transformer-based architecture with a multi-scale attention decoder for polyp segmentation. The model achieves 0.923 Dice on Kvasir-SEG, outperforming prior methods, especially on polyps with unclear boundaries. However, the approach has high computational requirements and has not been validated for real-time clinical deployment."
+    },
+    {
+      "paperId": "paper-1",
+      "title": "Efficient U-Net with Depthwise Separable Convolutions for Real-Time Polyp Segmentation",
+      "authors": ["Park, J.", "Kim, S.", "Lee, M."],
+      "venue": { "name": "Medical Image Analysis", "year": 2024, "type": "journal" },
+      "doi": "10.1016/j.media.2024.103456",
+      "sourceUrl": "https://doi.org/10.1016/j.media.2024.103456",
+      "keywords": ["Polyp Segmentation", "Efficient CNN", "Real-Time", "Depthwise Convolution"],
+      "problem": "Existing polyp segmentation models are too heavy for real-time clinical deployment on edge devices.",
+      "methodology": "Lightweight U-Net using depthwise separable convolutions to reduce parameters while maintaining accuracy.",
+      "dataset": [
+        { "name": "Kvasir-SEG", "usage": "evaluation" }
+      ],
+      "evaluation": [
+        { "name": "Dice Score", "value": 0.891, "unit": "" },
+        { "name": "FPS", "value": 120, "unit": "FPS" },
+        { "name": "Parameters", "value": "2.1M", "unit": "parameters" }
+      ],
+      "contributions": [
+        "Ultra-lightweight architecture (2.1M parameters) suitable for edge deployment",
+        "Real-time performance at 120 FPS on standard GPU",
+        "Competitive accuracy with 93% fewer parameters than standard U-Net"
+      ],
+      "limitations": [
+        "Lower accuracy compared to transformer-based methods (0.891 vs 0.923)",
+        "Evaluated on single dataset only",
+        "No clinical validation or deployment on actual hardware"
+      ],
+      "summary": "This paper presents EfficientU-Net, a lightweight CNN using depthwise separable convolutions that achieves 0.891 Dice on Kvasir-SEG while running at 120 FPS with only 2.1M parameters. It is designed for real-time clinical deployment but has lower accuracy than transformer-based approaches and lacks clinical validation."
+    },
+    {
+      "paperId": "paper-2",
+      "title": "Cross-Domain Polyp Segmentation via Style Transfer and Domain Adaptation",
+      "authors": ["Singh, A.", "Patel, R.", "Gupta, N."],
+      "venue": { "name": "IEEE Transactions on Medical Imaging", "year": 2024, "type": "journal" },
+      "doi": "10.1109/TMI.2024.3390123",
+      "sourceUrl": "",
+      "keywords": ["Domain Adaptation", "Style Transfer", "Polyp Segmentation", "Generalization"],
+      "problem": "Polyp segmentation models fail to generalize across datasets from different medical centers due to domain shift.",
+      "methodology": "Domain adaptation framework combining style transfer, domain discriminator, and style-matching loss.",
+      "dataset": [
+        { "name": "Kvasir-SEG", "usage": "training" },
+        { "name": "ETIS-Larib", "usage": "evaluation" },
+        { "name": "CVC-ColonDB", "usage": "evaluation" }
+      ],
+      "evaluation": [
+        { "name": "Dice Improvement", "value": "12%", "unit": "relative improvement" }
+      ],
+      "contributions": [
+        "Style transfer approach reduces domain gap between colonoscopy datasets",
+        "12% Dice improvement on cross-domain evaluation without target labels",
+        "Reduces per-center annotation requirements"
+      ],
+      "limitations": [
+        "Style transfer may alter clinically relevant features",
+        "Evaluated only on polyp datasets, not other modalities",
+        "Additional computational overhead during inference"
+      ],
+      "summary": "This paper addresses domain shift in polyp segmentation by proposing a style transfer and domain adaptation framework. It achieves 12% Dice improvement when transferring from Kvasir-SEG to ETIS-Larib without target domain labels. The approach reduces annotation burden but may alter clinically relevant features through style transfer."
+    }
+  ]
+}

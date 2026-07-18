@@ -1,0 +1,55 @@
+{
+  "papers": [
+    {
+      "id": "paper-0",
+      "sourceType": "arxiv",
+      "title": "Attention-Guided Transformer Network for Polyp Segmentation in Colonoscopy Images",
+      "authors": ["Zhang, Y.", "Chen, L.", "Wang, H."],
+      "year": 2025,
+      "abstract": "Polyp segmentation is crucial for early colorectal cancer diagnosis. We propose a transformer-based network with a multi-scale attention decoder. Experiments on three public datasets show a Dice score of 0.923 on Kvasir-SEG and 0.891 on CVC-ClinicDB.",
+      "doi": "10.1007/978-3-031-12345-6_1",
+      "sourceUrl": "https://arxiv.org/abs/2501.12345"
+    },
+    {
+      "id": "paper-1",
+      "sourceType": "doi",
+      "title": "Efficient U-Net with Depthwise Separable Convolutions for Real-Time Polyp Segmentation",
+      "authors": ["Park, J.", "Kim, S.", "Lee, M."],
+      "year": 2024,
+      "abstract": "Real-time polyp segmentation remains challenging. We propose EfficientU-Net, a lightweight CNN using depthwise separable convolutions. Achieves 0.891 Dice on Kvasir-SEG at 120 FPS with only 2.1M parameters.",
+      "doi": "10.1016/j.media.2024.103456",
+      "sourceUrl": "https://doi.org/10.1016/j.media.2024.103456"
+    },
+    {
+      "id": "paper-2",
+      "sourceType": "pdf",
+      "title": "Cross-Domain Polyp Segmentation via Style Transfer and Domain Adaptation",
+      "authors": ["Singh, A.", "Patel, R.", "Gupta, N."],
+      "year": 2024,
+      "abstract": "Models trained on one colonoscopy dataset often fail on images from different centers. We propose a domain adaptation framework using style transfer. Shows 12% improvement when transferring from Kvasir-SEG to ETIS-Larib.",
+      "doi": "10.1109/TMI.2024.3390123",
+      "sourceUrl": ""
+    },
+    {
+      "id": "paper-3",
+      "sourceType": "arxiv",
+      "title": "SAM-Med2D: Adapting Segment Anything Model for Medical Image Segmentation",
+      "authors": ["Cheng, J.", "Ye, J.", "Deng, Z."],
+      "year": 2024,
+      "abstract": "We adapt the Segment Anything Model (SAM) to medical images by fine-tuning on a large-scale medical dataset. SAM-Med2D achieves 0.812 Dice on polyp segmentation and generalizes across 10 medical imaging modalities.",
+      "doi": "10.48550/arXiv.2401.05234",
+      "sourceUrl": "https://arxiv.org/abs/2401.05234"
+    },
+    {
+      "id": "paper-4",
+      "sourceType": "doi",
+      "title": "Semi-Supervised Polyp Segmentation with Consistency Regularization and Pseudo-Labeling",
+      "authors": ["Liu, X.", "Zhao, W.", "Huang, Y."],
+      "year": 2025,
+      "abstract": "Manual annotation of polyps is time-consuming. We propose a semi-supervised method using consistency regularization and pseudo-labeling that achieves 0.872 Dice using only 20% labeled data, reducing annotation effort by 80%.",
+      "doi": "10.1016/j.neucom.2025.129876",
+      "sourceUrl": ""
+    }
+  ],
+  "researchArea": "Polyp Segmentation"
+}

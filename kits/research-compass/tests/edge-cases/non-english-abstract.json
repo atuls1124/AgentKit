@@ -1,0 +1,15 @@
+{
+  "papers": [
+    {
+      "id": "paper-0",
+      "sourceType": "pdf",
+      "title": "医学图像分割中的深度学习技术综述",
+      "authors": ["王, 明", "李, 华"],
+      "year": 2024,
+      "abstract": "深度学习在医学图像分割领域取得了显著进展。本文综述了最新的医学图像分割方法，包括U-Net、Transformer和扩散模型。我们分析了各种方法的优缺点，并讨论了未来的研究方向。",
+      "doi": "",
+      "sourceUrl": ""
+    }
+  ],
+  "researchArea": "Medical Image Segmentation"
+}

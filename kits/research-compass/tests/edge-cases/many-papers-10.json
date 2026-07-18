@@ -1,0 +1,105 @@
+﻿{
+    "researchArea":  "Medical Image Segmentation",
+    "papers":  [
+                   {
+                       "id":  "paper-0",
+                       "sourceType":  "arxiv",
+                       "title":  "DeepLabV3+ for Semantic Segmentation",
+                       "authors":  [
+                                       "Chen, L.C."
+                                   ],
+                       "year":  2018,
+                       "abstract":  "DeepLabV3+ extends DeepLabV3 by adding a simple yet effective decoder module to refine segmentation results."
+                   },
+                   {
+                       "id":  "paper-1",
+                       "sourceType":  "arxiv",
+                       "title":  "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+                       "authors":  [
+                                       "Ronneberger, O."
+                                   ],
+                       "year":  2015,
+                       "abstract":  "U-Net is a convolutional network architecture for fast and precise segmentation of biomedical images."
+                   },
+                   {
+                       "id":  "paper-2",
+                       "sourceType":  "arxiv",
+                       "title":  "Attention U-Net: Learning Where to Look for the Pancreas",
+                       "authors":  [
+                                       "Oktay, O."
+                                   ],
+                       "year":  2018,
+                       "abstract":  "Attention U-Net introduces attention gates that focus on target structures of varying shapes and sizes."
+                   },
+                   {
+                       "id":  "paper-3",
+                       "sourceType":  "arxiv",
+                       "title":  "nnU-Net: Self-adapting Framework for U-Net-Based Medical Image Segmentation",
+                       "authors":  [
+                                       "Isensee, F."
+                                   ],
+                       "year":  2021,
+                       "abstract":  "nnU-Net automatically configures itself for any new medical segmentation task."
+                   },
+                   {
+                       "id":  "paper-4",
+                       "sourceType":  "arxiv",
+                       "title":  "TransUNet: Transformers Make Strong Encoders for Medical Image Segmentation",
+                       "authors":  [
+                                       "Chen, J."
+                                   ],
+                       "year":  2021,
+                       "abstract":  "TransUNet hybridizes transformers and U-Net for medical image segmentation."
+                   },
+                   {
+                       "id":  "paper-5",
+                       "sourceType":  "arxiv",
+                       "title":  "Swin-Unet: Unet-like Pure Transformer for Medical Image Segmentation",
+                       "authors":  [
+                                       "Cao, H."
+                                   ],
+                       "year":  2022,
+                       "abstract":  "Swin-Unet is a pure transformer-based U-Net architecture for medical image segmentation."
+                   },
+                   {
+                       "id":  "paper-6",
+                       "sourceType":  "arxiv",
+                       "title":  "UNETR: Transformers for 3D Medical Image Segmentation",
+                       "authors":  [
+                                       "Hatamizadeh, A."
+                                   ],
+                       "year":  2022,
+                       "abstract":  "UNETR utilizes a transformer as the encoder for 3D medical image segmentation."
+                   },
+                   {
+                       "id":  "paper-7",
+                       "sourceType":  "arxiv",
+                       "title":  "MedSAM: Segment Anything in Medical Images",
+                       "authors":  [
+                                       "Ma, J."
+                                   ],
+                       "year":  2024,
+                       "abstract":  "MedSAM adapts the Segment Anything Model to medical images."
+                   },
+                   {
+                       "id":  "paper-8",
+                       "sourceType":  "arxiv",
+                       "title":  "SAMed: Segment Anything Model for Medical Image Segmentation",
+                       "authors":  [
+                                       "Zhang, Y."
+                                   ],
+                       "year":  2023,
+                       "abstract":  "SAMed fine-tunes SAM for medical image segmentation with adapter modules."
+                   },
+                   {
+                       "id":  "paper-9",
+                       "sourceType":  "arxiv",
+                       "title":  "EfficientMedSAM: Accelerated Medical SAM with Knowledge Distillation",
+                       "authors":  [
+                                       "Xiong, X."
+                                   ],
+                       "year":  2024,
+                       "abstract":  "EfficientMedSAM accelerates MedSAM through knowledge distillation for practical clinical use."
+                   }
+               ]
+}

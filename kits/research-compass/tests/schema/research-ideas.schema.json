@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ResearchIdeaGeneratorOutput",
+  "type": "object",
+  "required": ["ideas"],
+  "properties": {
+    "ideas": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["gapId", "researchQuestion", "proposedApproach", "novelty", "difficulty", "expectedImpact"],
+        "properties": {
+          "gapId": { "type": "string" },
+          "researchQuestion": {
+            "type": "string",
+            "pattern": "\\?$"
+          },
+          "proposedApproach": {
+            "type": "string",
+            "minLength": 80
+          },
+          "novelty": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 10
+          },
+          "difficulty": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 10
+          },
+          "expectedImpact": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 10
+          }
+        }
+      }
+    }
+  }
+}

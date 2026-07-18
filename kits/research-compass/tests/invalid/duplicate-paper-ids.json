@@ -1,0 +1,21 @@
+{
+  "papers": [
+    {
+      "id": "paper-0",
+      "sourceType": "arxiv",
+      "title": "Transformer Network for Segmentation",
+      "authors": ["Zhang, Y."],
+      "year": 2025,
+      "abstract": "A transformer-based approach for medical image segmentation."
+    },
+    {
+      "id": "paper-0",
+      "sourceType": "doi",
+      "title": "CNN for Real-Time Segmentation",
+      "authors": ["Park, J."],
+      "year": 2024,
+      "abstract": "A lightweight CNN for real-time segmentation."
+    }
+  ],
+  "researchArea": "Medical Image Segmentation"
+}

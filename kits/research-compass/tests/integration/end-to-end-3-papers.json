@@ -1,0 +1,13 @@
+{
+  "name": "End-to-End: 3 Papers",
+  "description": "Three papers in the same domain (polyp segmentation). Primary test case — validates meaningful comparison and gap detection.",
+  "input": "../sample-input/3-papers.json",
+  "validation": {
+    "node1": { "checks": ["schema:paper-intelligence.schema.json", "paperCount == 3", "paperIds preserved"] },
+    "node2": { "checks": ["schema:comparison.schema.json", "each dimension has 3 values", "at least 1 agreement", "at least 1 contradiction"] },
+    "node3": { "checks": ["schema:gap-analysis.schema.json", "at least 3 gaps", "supportingPaperCount matches evidence count"] },
+    "node4": { "checks": ["schema:research-ideas.schema.json", "ideas map to existing gapIds"] },
+    "node5": { "checks": ["schema:literature-review.schema.json", "all 6 sections present", "references all 3 papers"] }
+  },
+  "expectedBehavior": "Full pipeline should produce rich comparison with meaningful agreements/contradictions. Gap detection should draw from all 3 papers. Literature review should synthesize all findings."
+}

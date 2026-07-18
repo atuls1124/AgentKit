@@ -1,0 +1,73 @@
+{
+  "summary": "All three papers address polyp segmentation in colonoscopy images but adopt fundamentally different architectural philosophies. The transformer-based approach prioritizes accuracy, the lightweight CNN prioritizes efficiency, and the domain adaptation framework prioritizes generalization. Key tradeoffs emerge between accuracy, speed, and robustness across domains.",
+  "dimensions": [
+    {
+      "name": "problem",
+      "values": [
+        { "paperId": "paper-0", "value": "Improving segmentation accuracy for polyps with unclear boundaries" },
+        { "paperId": "paper-1", "value": "Enabling real-time deployment on resource-constrained hardware" },
+        { "paperId": "paper-2", "value": "Improving cross-domain generalization across different medical centers" }
+      ],
+      "insight": "Each paper addresses a distinct bottleneck in the clinical translation pipeline: accuracy, speed, and generalization."
+    },
+    {
+      "name": "methodology",
+      "values": [
+        { "paperId": "paper-0", "value": "Transformer encoder with multi-scale attention decoder" },
+        { "paperId": "paper-1", "value": "Lightweight U-Net with depthwise separable convolutions" },
+        { "paperId": "paper-2", "value": "Domain adaptation with style transfer and domain discriminator" }
+      ],
+      "insight": "The papers span three different paradigms: transformers (paper-0), efficient CNNs (paper-1), and distribution alignment (paper-2)."
+    },
+    {
+      "name": "dataset",
+      "values": [
+        { "paperId": "paper-0", "value": "Kvasir-SEG, CVC-ClinicDB (3 datasets total)" },
+        { "paperId": "paper-1", "value": "Kvasir-SEG only" },
+        { "paperId": "paper-2", "value": "Kvasir-SEG, ETIS-Larib, CVC-ColonDB (cross-domain setup)" }
+      ],
+      "insight": "Kvasir-SEG is the only common dataset across all three papers, but paper-1 evaluates on it alone while others use multiple datasets."
+    },
+    {
+      "name": "evaluation",
+      "values": [
+        { "paperId": "paper-0", "value": "Dice Score (0.923 Kvasir-SEG, 0.891 CVC-ClinicDB)" },
+        { "paperId": "paper-1", "value": "Dice Score (0.891), FPS (120), Parameter count (2.1M)" },
+        { "paperId": "paper-2", "value": "Dice improvement (12% cross-domain)" }
+      ],
+      "insight": "paper-1 is the only paper that measures inference speed and model size, metrics critical for deployment."
+    },
+    {
+      "name": "results",
+      "values": [
+        { "paperId": "paper-0", "value": "SOTA accuracy on multiple benchmarks; strong on boundary cases" },
+        { "paperId": "paper-1", "value": "Competitive accuracy with 93% fewer parameters; real-time speed" },
+        { "paperId": "paper-2", "value": "12% improvement in cross-domain setting; reduces annotation need" }
+      ],
+      "insight": "Each paper achieves the best result in its respective objective, but no single paper addresses all three goals."
+    },
+    {
+      "name": "contributions",
+      "values": [
+        { "paperId": "paper-0", "value": "Novel attention decoder; SOTA results; open-source release" },
+        { "paperId": "paper-1", "value": "Ultra-lightweight architecture; real-time inference benchmark" },
+        { "paperId": "paper-2", "value": "Style-based domain adaptation; cross-validation across centers" }
+      ],
+      "insight": "Contributions are complementary — the ideal system would combine accuracy (paper-0), efficiency (paper-1), and generalization (paper-2)."
+    }
+  ],
+  "agreements": [
+    "All three papers identify polyp segmentation as critical for early colorectal cancer diagnosis",
+    "All papers use Kvasir-SEG as at least one evaluation dataset",
+    "All papers acknowledge the gap between research performance and clinical deployment"
+  ],
+  "contradictions": [
+    "paper-0 prioritizes accuracy via complex transformers, while paper-1 sacrifices accuracy for efficiency via lightweight CNNs",
+    "paper-2 argues domain shift is the primary bottleneck, while paper-0 and paper-1 do not address this at all"
+  ],
+  "keyInsights": [
+    "No single paper jointly addresses accuracy, efficiency, and generalization — each focuses on one dimension at the expense of others",
+    "Only paper-1 reports deployment-relevant metrics (FPS, parameter count), suggesting a gap between research evaluation and clinical requirements",
+    "Kvasir-SEG is used universally, but paper-1's single-dataset evaluation limits the generalizability of its claims"
+  ]
+}

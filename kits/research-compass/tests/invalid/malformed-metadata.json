@@ -1,0 +1,21 @@
+{
+  "papers": [
+    {
+      "id": "paper-0",
+      "sourceType": "arxiv",
+      "title": "A Method for Medical Image Segmentation",
+      "authors": [],
+      "year": -1,
+      "abstract": ""
+    },
+    {
+      "id": "paper-1",
+      "sourceType": "doi",
+      "title": "Another Approach to Segmentation",
+      "authors": null,
+      "year": 9999,
+      "abstract": null
+    }
+  ],
+  "researchArea": ""
+}

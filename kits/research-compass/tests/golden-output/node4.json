@@ -1,0 +1,36 @@
+{
+  "ideas": [
+    {
+      "gapId": "gap-0",
+      "researchQuestion": "Can a hybrid transformer-CNN architecture achieve both high accuracy and real-time performance on edge hardware for polyp segmentation?",
+      "proposedApproach": "Design a hybrid model that uses a lightweight CNN encoder for efficiency and a transformer-based decoder for accuracy, then benchmark on NVIDIA Jetson and smartphone GPUs. Evaluate both accuracy (Dice, IoU) and latency (FPS, power consumption) across multiple hardware platforms.",
+      "novelty": 7,
+      "difficulty": 7,
+      "expectedImpact": 9
+    },
+    {
+      "gapId": "gap-1",
+      "researchQuestion": "How can attention visualization and uncertainty estimation be integrated into polyp segmentation to provide clinically useful interpretability?",
+      "proposedApproach": "Extend existing transformer-based segmentation models with attention rollout visualization and Monte Carlo dropout uncertainty estimation. Conduct a user study with gastroenterologists to evaluate whether the visual explanations improve trust and decision-making.",
+      "novelty": 8,
+      "difficulty": 5,
+      "expectedImpact": 8
+    },
+    {
+      "gapId": "gap-2",
+      "researchQuestion": "How do current polyp segmentation methods generalize to other gastrointestinal image segmentation tasks such as ulcer and bleeding detection?",
+      "proposedApproach": "Evaluate top-performing architectures from polyp segmentation on datasets for ulcer detection, bleeding region segmentation, and celiac disease diagnosis. Analyze failure modes across tasks and identify architecture components that transfer well versus those that overfit to polyp-specific features.",
+      "novelty": 6,
+      "difficulty": 4,
+      "expectedImpact": 7
+    },
+    {
+      "gapId": "gap-3",
+      "researchQuestion": "What is a minimal standardized evaluation protocol for polyp segmentation that captures both research accuracy and clinical deployment readiness?",
+      "proposedApproach": "Propose and validate a standardized evaluation suite that includes Dice, IoU, FPS, parameter count, and cross-domain performance. Demonstrate the protocol by evaluating 5-10 recent methods and publishing a leaderboard with consistent metrics.",
+      "novelty": 5,
+      "difficulty": 3,
+      "expectedImpact": 7
+    }
+  ]
+}

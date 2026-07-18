@@ -1,0 +1,13 @@
+{
+  "name": "End-to-End: 5 Papers",
+  "description": "Five papers covering polyp segmentation with more diverse approaches (transformer, CNN, domain adaptation, foundation model, semi-supervised).",
+  "input": "../sample-input/5-papers.json",
+  "validation": {
+    "node1": { "checks": ["schema:paper-intelligence.schema.json", "paperCount == 5", "domain correctly inferred"] },
+    "node2": { "checks": ["schema:comparison.schema.json", "each dimension has 5 values", "meaningful keyInsights"] },
+    "node3": { "checks": ["schema:gap-analysis.schema.json", "at least 4 gaps", "evidence from multiple papers per gap"] },
+    "node4": { "checks": ["schema:research-ideas.schema.json", "ideas from 0.6+ confidence gaps"] },
+    "node5": { "checks": ["schema:literature-review.schema.json", "1500-3000 word range"] }
+  },
+  "expectedBehavior": "Richer analysis with 5 papers. More gaps detected, more evidence per gap. Literature review should show clear trends across the broader set."
+}

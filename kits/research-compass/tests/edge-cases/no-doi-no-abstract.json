@@ -1,0 +1,15 @@
+{
+  "papers": [
+    {
+      "id": "paper-0",
+      "sourceType": "title",
+      "title": "Deep Learning for Medical Image Analysis: A Comprehensive Survey",
+      "authors": ["Liu, X."],
+      "year": 2023,
+      "abstract": "",
+      "doi": "",
+      "sourceUrl": ""
+    }
+  ],
+  "researchArea": ""
+}

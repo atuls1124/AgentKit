@@ -1,0 +1,35 @@
+{
+  "papers": [
+    {
+      "id": "paper-0",
+      "sourceType": "arxiv",
+      "title": "Attention-Guided Transformer Network for Polyp Segmentation in Colonoscopy Images",
+      "authors": ["Zhang, Y.", "Chen, L.", "Wang, H."],
+      "year": 2025,
+      "abstract": "Polyp segmentation is crucial for early colorectal cancer diagnosis. We propose a transformer-based network with a multi-scale attention decoder that captures both local and global contextual information. Experiments on three public datasets demonstrate that our method achieves state-of-the-art performance with a Dice score of 0.923 on Kvasir-SEG and 0.891 on CVC-ClinicDB. Our approach shows particular strength in segmenting polyps with unclear boundaries.",
+      "doi": "10.1007/978-3-031-12345-6_1",
+      "sourceUrl": "https://arxiv.org/abs/2501.12345"
+    },
+    {
+      "id": "paper-1",
+      "sourceType": "doi",
+      "title": "Efficient U-Net with Depthwise Separable Convolutions for Real-Time Polyp Segmentation",
+      "authors": ["Park, J.", "Kim, S.", "Lee, M."],
+      "year": 2024,
+      "abstract": "Real-time polyp segmentation remains challenging for deployment in clinical settings. We propose EfficientU-Net, a lightweight CNN architecture using depthwise separable convolutions that achieves competitive accuracy with significantly fewer parameters. Our model achieves 0.891 Dice on Kvasir-SEG while running at 120 FPS on a standard GPU. The model has only 2.1M parameters compared to 31M for standard U-Net, making it suitable for edge deployment.",
+      "doi": "10.1016/j.media.2024.103456",
+      "sourceUrl": "https://doi.org/10.1016/j.media.2024.103456"
+    },
+    {
+      "id": "paper-2",
+      "sourceType": "pdf",
+      "title": "Cross-Domain Polyp Segmentation via Style Transfer and Domain Adaptation",
+      "authors": ["Singh, A.", "Patel, R.", "Gupta, N."],
+      "year": 2024,
+      "abstract": "Polyp segmentation models trained on one colonoscopy dataset often fail on images from different centers due to domain shift. We propose a domain adaptation framework that uses style transfer to harmonize image appearances across domains. Our method incorporates a domain discriminator and style-matching loss. Experiments show a 12% improvement in Dice when transferring from Kvasir-SEG to ETIS-Larib without target domain labels. The approach reduces the need for per-center annotation.",
+      "doi": "10.1109/TMI.2024.3390123",
+      "sourceUrl": ""
+    }
+  ],
+  "researchArea": "Medical Image Segmentation"
+}

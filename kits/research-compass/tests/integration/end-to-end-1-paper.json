@@ -1,0 +1,13 @@
+{
+  "name": "End-to-End: 1 Paper",
+  "description": "Single paper flow through all 5 nodes. Validates that the pipeline handles a minimal input correctly.",
+  "input": "../sample-input/1-paper.json",
+  "validation": {
+    "node1": { "checks": ["schema:paper-intelligence.schema.json", "paperCount == 1", "domain is detected"] },
+    "node2": { "checks": ["schema:comparison.schema.json", "all 6 dimensions present", "each dimension has 1 value"] },
+    "node3": { "checks": ["schema:gap-analysis.schema.json", "at least 1 gap", "all evidence paperIds exist"] },
+    "node4": { "checks": ["schema:research-ideas.schema.json", "at least 1 idea", "scores in 1-10 range"] },
+    "node5": { "checks": ["schema:literature-review.schema.json", "all 6 sections present", "markdown >= 500 chars"] }
+  },
+  "expectedBehavior": "Should produce a coherent analysis even with a single paper. Node 2 will have limited comparisons. Node 3 and 4 may still identify gaps and ideas from the paper's limitations."
+}

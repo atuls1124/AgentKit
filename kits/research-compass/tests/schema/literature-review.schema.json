@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "LiteratureReview",
+  "type": "object",
+  "required": ["title", "sections", "markdown"],
+  "properties": {
+    "title": { "type": "string", "minLength": 1 },
+    "sections": {
+      "type": "array",
+      "minItems": 6,
+      "items": {
+        "type": "object",
+        "required": ["heading", "content"],
+        "properties": {
+          "heading": { "type": "string" },
+          "content": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "markdown": {
+      "type": "string",
+      "minLength": 500
+    }
+  }
+}

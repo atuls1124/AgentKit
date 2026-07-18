@@ -1,0 +1,94 @@
+{
+  "gaps": [
+    {
+      "id": "gap-0",
+      "type": "Deployment",
+      "description": "No paper validates polyp segmentation models in real clinical workflows or on actual edge hardware.",
+      "confidence": 0.94,
+      "supportingPaperCount": 3,
+      "evidence": [
+        {
+          "paperId": "paper-0",
+          "paperTitle": "Attention-Guided Transformer Network for Polyp Segmentation",
+          "reason": "No mention of deployment, latency, or hardware requirements despite being the most complex model"
+        },
+        {
+          "paperId": "paper-1",
+          "paperTitle": "Efficient U-Net with Depthwise Separable Convolutions",
+          "reason": "Achieves 120 FPS but tested only on standard GPU, not on clinical hardware or edge devices"
+        },
+        {
+          "paperId": "paper-2",
+          "paperTitle": "Cross-Domain Polyp Segmentation via Style Transfer",
+          "reason": "Adds computational overhead through style transfer but does not measure inference impact"
+        }
+      ],
+      "reasoning": "All three papers develop models intended for clinical use, yet none validate on actual clinical hardware or within a real clinical workflow. Paper-0 uses a heavy transformer without efficiency analysis. Paper-1, despite claiming edge suitability, tests only on a standard GPU. Paper-2 adds inference overhead without measuring it. This suggests a systematic gap between research validation and clinical deployment requirements."
+    },
+    {
+      "id": "gap-1",
+      "type": "Explainability",
+      "description": "No paper provides interpretability analysis or visualization of model decisions for clinical users.",
+      "confidence": 0.87,
+      "supportingPaperCount": 2,
+      "evidence": [
+        {
+          "paperId": "paper-0",
+          "paperTitle": "Attention-Guided Transformer Network for Polyp Segmentation",
+          "reason": "Uses attention mechanisms theoretically suited for interpretability but provides no attention visualization or saliency maps"
+        },
+        {
+          "paperId": "paper-1",
+          "paperTitle": "Efficient U-Net with Depthwise Separable Convolutions",
+          "reason": "No interpretability analysis despite model being intended for clinical decision support"
+        }
+      ],
+      "reasoning": "Both paper-0 and paper-1 propose models intended for clinical use but provide no mechanism for clinicians to understand or verify model predictions. Paper-0's attention mechanism could naturally support visualization but this is not explored. For clinical adoption, explainability is a prerequisite that none of the papers address."
+    },
+    {
+      "id": "gap-2",
+      "type": "Dataset",
+      "description": "Over-reliance on Kvasir-SEG limits the demonstrated generalizability of proposed methods.",
+      "confidence": 0.82,
+      "supportingPaperCount": 3,
+      "evidence": [
+        {
+          "paperId": "paper-0",
+          "paperTitle": "Attention-Guided Transformer Network for Polyp Segmentation",
+          "reason": "Uses Kvasir-SEG and CVC-ClinicDB — both are widely used but similar in distribution"
+        },
+        {
+          "paperId": "paper-1",
+          "paperTitle": "Efficient U-Net with Depthwise Separable Convolutions",
+          "reason": "Evaluates on Kvasir-SEG only — weakest generalizability evidence among the three"
+        },
+        {
+          "paperId": "paper-2",
+          "paperTitle": "Cross-Domain Polyp Segmentation via Style Transfer",
+          "reason": "Uses multiple datasets but all are from the same polyp segmentation domain"
+        }
+      ],
+      "reasoning": "Every paper relies on Kvasir-SEG, which has become a de facto benchmark. While paper-0 and paper-2 use additional datasets, all datasets are from the same narrow domain of polyp segmentation in colonoscopy. None of the papers validate on datasets from different anatomical sites or imaging modalities, limiting claims about generalizability to broader medical image segmentation tasks."
+    },
+    {
+      "id": "gap-3",
+      "type": "Evaluation",
+      "description": "Inconsistent evaluation metrics across papers make direct comparison difficult.",
+      "confidence": 0.76,
+      "supportingPaperCount": 2,
+      "evidence": [
+        {
+          "paperId": "paper-0",
+          "paperTitle": "Attention-Guided Transformer Network for Polyp Segmentation",
+          "reason": "Reports only Dice score; no IoU, precision, recall, or clinical utility metrics"
+        },
+        {
+          "paperId": "paper-2",
+          "paperTitle": "Cross-Domain Polyp Segmentation via Style Transfer",
+          "reason": "Reports Dice improvement only; no absolute performance numbers or standard deviation"
+        }
+      ],
+      "reasoning": "The three papers report different sets of metrics: paper-0 reports only Dice, paper-1 reports Dice plus efficiency metrics, and paper-2 reports relative improvement. This inconsistency makes it difficult to directly compare methods. The field would benefit from a standardized evaluation protocol that includes both accuracy metrics and deployment-relevant measures."
+    }
+  ]
+}

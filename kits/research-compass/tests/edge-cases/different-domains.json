@@ -1,0 +1,29 @@
+{
+  "papers": [
+    {
+      "id": "paper-0",
+      "sourceType": "arxiv",
+      "title": "Transformer-Based Polyp Segmentation in Colonoscopy Images",
+      "authors": ["Zhang, Y."],
+      "year": 2025,
+      "abstract": "A transformer approach for polyp segmentation in colonoscopy images."
+    },
+    {
+      "id": "paper-1",
+      "sourceType": "arxiv",
+      "title": "Sentiment Analysis of Social Media Posts Using BERT",
+      "authors": ["Patel, R."],
+      "year": 2024,
+      "abstract": "Fine-tuning BERT for sentiment classification of social media text."
+    },
+    {
+      "id": "paper-2",
+      "sourceType": "arxiv",
+      "title": "Reinforcement Learning for Autonomous Driving in Urban Environments",
+      "authors": ["Singh, A."],
+      "year": 2024,
+      "abstract": "Using deep RL for urban autonomous driving decision-making."
+    }
+  ],
+  "researchArea": ""
+}
